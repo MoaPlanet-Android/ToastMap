@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="출발 좌표"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    <EditText
+            android:id="@+id/et_start_lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="출발 위도" />
+
+    <EditText
+            android:id="@+id/et_start_lng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="출발 경도" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도착 좌표"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    <EditText
+            android:id="@+id/et_end_lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="도착 위도" />
+
+    <EditText
+            android:id="@+id/et_end_lng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="도착 경도" />
+
+    <Button
+            android:id="@+id/btn_lookup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="조회하기" />
+
+    <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="거리 : "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="시간 : "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+</LinearLayout>
